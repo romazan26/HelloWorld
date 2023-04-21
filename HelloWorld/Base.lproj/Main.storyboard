@@ -19,15 +19,15 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="IA9-lD-4av">
                                 <rect key="frame" x="107" y="104" width="179" height="549.66666666666663"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="neF-SB-3WL">
+                                    <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="neF-SB-3WL">
                                         <rect key="frame" x="0.0" y="0.0" width="179" height="180"/>
                                         <color key="backgroundColor" systemColor="systemRedColor"/>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5do-D5-Rwx">
+                                    <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5do-D5-Rwx">
                                         <rect key="frame" x="0.0" y="185" width="179" height="179.66666666666663"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H9K-hf-0A8">
+                                    <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H9K-hf-0A8">
                                         <rect key="frame" x="0.0" y="369.66666666666669" width="179" height="180.00000000000006"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                                     </view>
