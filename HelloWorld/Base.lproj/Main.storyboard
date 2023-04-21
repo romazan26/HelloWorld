@@ -16,44 +16,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="IA9-lD-4av">
-                                <rect key="frame" x="107" y="104" width="179" height="549.66666666666663"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Dj9-gJ-OfS">
+                                <rect key="frame" x="107" y="104" width="179" height="641"/>
                                 <subviews>
-                                    <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="neF-SB-3WL">
-                                        <rect key="frame" x="0.0" y="0.0" width="179" height="180"/>
-                                        <color key="backgroundColor" systemColor="systemRedColor"/>
-                                    </view>
-                                    <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5do-D5-Rwx">
-                                        <rect key="frame" x="0.0" y="185" width="179" height="179.66666666666663"/>
-                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                    </view>
-                                    <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H9K-hf-0A8">
-                                        <rect key="frame" x="0.0" y="369.66666666666669" width="179" height="180.00000000000006"/>
-                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
-                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="IA9-lD-4av">
+                                        <rect key="frame" x="0.0" y="0.0" width="179" height="389.66666666666669"/>
+                                        <subviews>
+                                            <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="neF-SB-3WL">
+                                                <rect key="frame" x="0.0" y="0.0" width="179" height="126.66666666666667"/>
+                                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                            </view>
+                                            <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5do-D5-Rwx">
+                                                <rect key="frame" x="0.0" y="131.66666666666666" width="179" height="126.33333333333334"/>
+                                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                            </view>
+                                            <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H9K-hf-0A8">
+                                                <rect key="frame" x="0.0" y="263" width="179" height="126.66666666666669"/>
+                                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ed-E8-Fkf">
+                                        <rect key="frame" x="0.0" y="409.66666666666657" width="179" height="231.33333333333331"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="START"/>
+                                        <connections>
+                                            <action selector="pushStartButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="h5D-gp-Oj5"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ed-E8-Fkf">
-                                <rect key="frame" x="111" y="709.66666666666663" width="172" height="34.333333333333371"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="START"/>
-                                <connections>
-                                    <action selector="pushStartButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="h5D-gp-Oj5"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="1Ed-E8-Fkf" firstAttribute="top" secondItem="IA9-lD-4av" secondAttribute="bottom" constant="56" id="7Rs-cv-8WK"/>
-                            <constraint firstItem="IA9-lD-4av" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="107" id="FU0-Cg-Itq"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1Ed-E8-Fkf" secondAttribute="trailing" constant="110" id="FZG-T7-B6U"/>
-                            <constraint firstItem="1Ed-E8-Fkf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="111" id="M8y-eS-cyR"/>
-                            <constraint firstItem="1Ed-E8-Fkf" firstAttribute="top" secondItem="IA9-lD-4av" secondAttribute="bottom" constant="56" id="V8G-t7-P9y"/>
-                            <constraint firstItem="IA9-lD-4av" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="45" id="VTk-l0-XRj"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1Ed-E8-Fkf" secondAttribute="bottom" constant="74" id="cnN-x7-875"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IA9-lD-4av" secondAttribute="trailing" constant="107" id="wHh-gc-NJC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Dj9-gJ-OfS" secondAttribute="bottom" constant="73" id="DzC-2V-ez1"/>
+                            <constraint firstItem="Dj9-gJ-OfS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="45" id="NCx-lv-czk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Dj9-gJ-OfS" secondAttribute="trailing" constant="107" id="Rl9-yb-kMP"/>
+                            <constraint firstItem="Dj9-gJ-OfS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="107" id="odh-GO-bdM"/>
                         </constraints>
                     </view>
                     <connections>
@@ -74,6 +76,9 @@
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
